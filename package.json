@@ -1,0 +1,17 @@
+{
+  "name": "crypto-dashboard",
+  "version": "1.0.0",
+  "description": "A crypto dashboard project",
+  "main": "crypto-dashboard",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "author": "Efosa Uyi-Idahor",
+  "license": "ISC"
+}
