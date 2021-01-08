@@ -37,9 +37,7 @@
                             <p class="mb-5 text-xs italic">Payments would be verified by Admin and approved once confirmed in no time</p>
                         </div>
                     </main>
-                    <footer>
-                        <?php include("footer.php") ?>
-                    </footer>
+                    <?php include("footer.php") ?>
                 </div>
             </div>
         </div>

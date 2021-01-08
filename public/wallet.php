@@ -108,10 +108,8 @@
                                 </div>
                             </div>
                         </div>
-                    </main>
-                    <footer>      
-                        <?php include("footer.php") ?>
-                    </footer>
+                    </main>   
+                    <?php include("footer.php") ?>
                 </div>
             </div>
         </div>

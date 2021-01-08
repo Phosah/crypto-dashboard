@@ -3,56 +3,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     
     <title>Dashboard</title>
 </head>
 <body>
     <div class="flex bg-bgColor text-brand-gray-medium text-sm">
         <div class="min-h-screen w-52 bg-gray-900"> <!--sidebar start-->
-    <div class="fixed w-52 min-h-full py-7 flex flex-col bg-white text-brand-gray-light text-sm">
+            <div class="fixed w-52 min-h-full py-7 flex flex-col bg-white text-brand-gray-light text-sm">
+                <div class="flex-1">
+                    <div class="w-3/4 m-auto mb-8"><img src="img/dashboard-logo.png" alt="Dashboard logo"></div>
+                    <div class="group flex mb-8 items-center w-3/4 m-auto">
+                        <div class="mr-3 group-focus:text-blue-700"><img src="img/dashboard-icon.png" alt="Dashboard icon"></div>
+                        <a href="dashboard.html" class="bg-white group-focus:text-blue-500">Dashboard</a>
+                    </div>
+                    <div class="flex <br />
+                        <b>Notice</b>:  Undefined variable: wallet in <b>C:\xampp\htdocs\crypto-dashboard\public\sidebar.php</b> on line <b>9</b><br />
+                        items-center w-3/4 m-auto mb-8">
+                        <div class="mr-3"><img src="img/wallet.png" alt="Wallet icon"> </div>
+                        <a href="wallet.html">Wallet</a>
+                    </div>
+                    <div class="flex <br />
+                        <b>Notice</b>:  Undefined variable: deposit in <b>C:\xampp\htdocs\crypto-dashboard\public\sidebar.php</b> on line <b>13</b><br />
+                        items-center mb-8 w-3/4 m-auto">
+                        <div class="mr-3"><img src="img/deposit.png" alt="Deposit icon"></div>
+                        <a href="deposit.html">Deposit</a>
+                    </div>
+                    <div class="flex items-center mb-8 w-3/4 m-auto">
+                        <div class="mr-3"><img src="img/withdrawal.png" alt="Withdrawal icon"></div>
+                        <a href="withdraw.html">Withdrawal</a>
+                    </div>
+                    <div class="flex items-center mb-8 w-3/4 m-auto">
+                        <div class="mr-3"><img src="img/profile.png" alt="Profile icon"></div>
+                        <a class="" href="profile.html">Profile</a>
+                    </div>
+                </div>
+                <div class="flex w-3/4 m-auto">
+                    <div class="mr-3"><img src="img/signout.png" alt="Sign out"></div>
+                    <p class="text-red-700">Sign Out</p>
+                </div>
+            </div>
+        </div> <!--sidebar end-->        
         <div class="flex-1">
-            <div class="w-3/4 m-auto mb-8"><img src="img/dashboard-logo.png" alt="Dashboard logo"></div>
-            <div class="group flex mb-8 items-center w-3/4 m-auto">
-                <div class="mr-3 group-focus:text-blue-700"><img src="img/dashboard-icon.png" alt="Dashboard icon"></div>
-                <a href="dashboard.html" class="bg-white group-focus:text-blue-500">Dashboard</a>
-            </div>
-            <div class="flex <br />
-<b>Notice</b>:  Undefined variable: wallet in <b>C:\xampp\htdocs\crypto-dashboard\public\sidebar.php</b> on line <b>9</b><br />
- items-center w-3/4 m-auto mb-8">
-                <div class="mr-3"><img src="img/wallet.png" alt="Wallet icon"> </div>
-                <a href="wallet.html">Wallet</a>
-            </div>
-            <div class="flex <br />
-<b>Notice</b>:  Undefined variable: deposit in <b>C:\xampp\htdocs\crypto-dashboard\public\sidebar.php</b> on line <b>13</b><br />
- items-center mb-8 w-3/4 m-auto">
-                <div class="mr-3"><img src="img/deposit.png" alt="Deposit icon"></div>
-                <a href="deposit.html">Deposit</a>
-            </div>
-            <div class="flex items-center mb-8 w-3/4 m-auto">
-                <div class="mr-3"><img src="img/withdrawal.png" alt="Withdrawal icon"></div>
-                <a href="withdraw.html">Withdrawal</a>
-            </div>
-            <div class="flex items-center mb-8 w-3/4 m-auto">
-                <div class="mr-3"><img src="img/profile.png" alt="Profile icon"></div>
-                <a class="" href="profile.html">Profile</a>
-            </div>
-        </div>
-        <div class="flex w-3/4 m-auto">
-            <div class="mr-3"><img src="img/signout.png" alt="Sign out"></div>
-            <p class="text-red-700">Sign Out</p>
-        </div>
-    </div>
-</div> <!--sidebar end-->        <div class="flex-1">
             <div class="flex flex-col">
                 <header class="">
                     <nav class="flex-1 bg-white">
-    <div class="flex items-center justify-end py-2 px-6">
-        <div><img class="h-4" src="img/nav-icon.png" alt="Notification"></div>
-        <div class="flex items-center ml-8"><img src="img/nav-photo.png" class="w-8 h-8" alt="Male profile photo"></div>
-        <p class="ml-4 font-bold text-brand-gray-dark">Efosa Uyi-Idahor</p>
-    </div>
-</nav>                </header>
+                        <div class="flex items-center justify-end py-2 px-6">
+                            <div><img class="h-4" src="img/nav-icon.png" alt="Notification"></div>
+                            <div class="flex items-center ml-8"><img src="img/nav-photo.png" class="w-8 h-8" alt="Male profile photo"></div>
+                            <p class="ml-4 font-bold text-brand-gray-dark">Efosa Uyi-Idahor</p>
+                        </div>
+                    </nav>                
+                </header>
                 <div class="main-box flex flex-col overflow-y-auto">
                     <main class="flex-1">
                         <div class="mt-18 px-5 ">
@@ -106,17 +108,16 @@
                             </div>
                         </div>
                     </main>
-                    <footer class="">
-                        <footer class="flex justify-between px-6 py-3 bg-white shadow-sm text-sm">
-    <div class="">
-        <p class="inline-block text-blue-600 mr-4">Privacy Policy</p>
-        <p class="inline-block text-blue-600">Term of use</p>
-    </div>
-    <div class="text-brand-gray-medium">Copyright Lauptech. All rights reserved</div>
-</footer>                    </footer>
+                    <footer class="flex justify-between px-6 py-3 bg-white shadow-sm text-sm">
+                        <div class="">
+                            <p class="inline-block text-blue-600 mr-4">Privacy Policy</p>
+                            <p class="inline-block text-blue-600">Term of use</p>
+                        </div>
+                        <div class="text-brand-gray-medium">Copyright Lauptech. All rights reserved</div>
+                    </footer>
                 </div>
             </div>
         </div>
     </div>
-
-</body></html>
+</body>
+</html>
