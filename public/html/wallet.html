@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+
+    <title>Wallet</title>
+</head>
+<body>
+    <div class="flex bg-bgColor text-brand-gray-medium text-sm">
+                <div class="min-h-screen w-52 bg-gray-900"> <!--sidebar start-->
+    <div class="fixed w-52 min-h-full py-7 flex flex-col bg-white text-brand-gray-light text-sm">
+        <div class="flex-1">
+            <div class="w-3/4 m-auto mb-8"><img src="img/dashboard-logo.png" alt="Dashboard logo"></div>
+            <div class="group flex mb-8 items-center w-3/4 m-auto">
+                <div class="mr-3 group-focus:text-blue-700"><img src="img/dashboard-icon.png" alt="Dashboard icon"></div>
+                <a href="dashboard.php" class="bg-white group-focus:text-blue-500">Dashboard</a>
+            </div>
+            <div class="flex text-blue-800 font-bold items-center w-3/4 m-auto mb-8">
+                <div class="mr-3"><img src="img/wallet.png" alt="Wallet icon"> </div>
+                <a href="wallet.php">Wallet</a>
+            </div>
+            <div class="flex <br />
+<b>Notice</b>:  Undefined variable: deposit in <b>C:\xampp\htdocs\crypto-dashboard\public\sidebar.php</b> on line <b>13</b><br />
+ items-center mb-8 w-3/4 m-auto">
+                <div class="mr-3"><img src="img/deposit.png" alt="Deposit icon"></div>
+                <a href="deposit.php">Deposit</a>
+            </div>
+            <div class="flex items-center mb-8 w-3/4 m-auto">
+                <div class="mr-3"><img src="img/withdrawal.png" alt="Withdrawal icon"></div>
+                <a href="withdraw.php">Withdrawal</a>
+            </div>
+            <div class="flex items-center mb-8 w-3/4 m-auto">
+                <div class="mr-3"><img src="img/profile.png" alt="Profile icon"></div>
+                <a class="" href="profile.php">Profile</a>
+            </div>
+        </div>
+        <div class="flex w-3/4 m-auto">
+            <div class="mr-3"><img src="img/signout.png" alt="Sign out"></div>
+            <p class="text-red-700">Sign Out</p>
+        </div>
+    </div>
+</div> <!--sidebar end-->        <div class="flex-1">
+            <div class="flex flex-col">
+                <header>
+                    <nav class="flex-1 bg-white">
+    <div class="flex items-center justify-end py-2 px-6">
+        <div><img class="h-4" src="img/nav-icon.png" alt="Notification"></div>
+        <div class="flex items-center ml-8"><img src="img/nav-photo.png" class="w-8 h-8" alt="Male profile photo"></div>
+        <p class="ml-4 font-bold text-brand-gray-dark">Efosa Uyi-Idahor</p>
+    </div>
+</nav>                </header>
+                <div class="main-box flex flex-col overflow-y-auto">
+                    <main class="flex-1">
+                        <div class="mt-18 mx-5">
+                            <div class="flex my-8">      
+                                <div class="w-1/4 p-4 mr-3 flex items-center justify-between bg-white rounded shadow-md">
+                                    <div>
+                                        <p class="font-bold">Total balance</p>
+                                        <p class="text-blue-700 font-bold">0.00BTC</p>
+                                    </div>
+                                    <div class="bg-brand-green-light rounded-full p-2"><img src="img/balance.png" alt="Balance"></div>
+                                </div>
+                                <div class="w-1/4 p-2 mr-3 flex items-center justify-between bg-white rounded shadow-md">
+                                    <div>
+                                        <p class="font-bold">Total earnings</p>
+                                        <p class="text-blue-700 font-bold">0.00BTC</p>
+                                    </div>
+                                    <div class="bg-red-100 rounded-full p-2"><img src="img/earnings.png" alt="Balance"></div>
+                                </div>
+                                <div class="w-1/4 p-2 mr-3 flex items-center justify-between bg-white rounded shadow-md">
+                                    <div>
+                                        <p class="font-bold">Deposits</p>
+                                        <p class="text-blue-700 font-bold">0.00BTC</p>
+                                    </div>
+                                    <div class="bg-purple-200 rounded-full p-2"><img src="img/deposits.png" alt="Balance"></div>
+                                </div>
+                                <div class="w-1/4 p-2 flex items-center justify-between bg-white rounded shadow-md">
+                                    <div>
+                                        <p class="font-bold">Withdrawals</p>
+                                        <p class="text-blue-700 font-bold">0.00USD</p>
+                                    </div>
+                                    <div class="bg-yellow-100 rounded-full p-2"><img src="img/withdrawals.png" alt="Balance"></div>
+                                </div>
+                            </div>
+                            <div class="mb-10">
+                                <button class="rounded bg-white border border-blue-700 text-blue-700 px-4 py-2 mr-4">− Withdraw</button>
+                                <button class="rounded bg-blue-700 text-white px-4 py-2">+ Deposit</button>
+                            </div>
+                            <div class="mb-10 bg-white rounded shadow-lg">
+                                <p class="mb-4 pl-2 py-3 border-b border-borderLine font-bold text-brand-gray-dark">Transaction History</p>
+                                <div class="px-3">
+                                    <table class="w-full px-3 table-fixed">
+                                        <thead>
+                                        <tr class="text-left bg-bgColor text-brand-gray-dark font-bold">
+                                            <th class="w-1/5 pl-2 py-3">Reference ID</th>
+                                            <th class="w-1/5">Type</th>
+                                            <th class="w-1/5">Method</th>
+                                            <th class="w-1/5">Amount</th>
+                                            <th class="w-1/5">Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="mx-4">
+                                        <tr class="border-b border-borderLine">
+                                            <td class="pl-2 py-3">FT-20141202-459557</td>
+                                            <td class="text-green-400">Deposit</td>
+                                            <td>BTC</td>
+                                            <td>0.1225</td>
+                                            <td class="text-green-400">Completed</td>
+                                        </tr>
+                                        <tr class="border-b border-borderLine">
+                                            <td class="pl-2 py-3">FT-20141202-459586</td>
+                                            <td class="text-green-400">Deposit</td>
+                                            <td>Etherum</td>
+                                            <td>4.3000</td>
+                                            <td class="text-yellow-400">Pending</td>
+                                        </tr>
+                                        <tr class="border-b border-borderLine">
+                                            <td class="pl-2 py-3">FT-20141202-459555</td>
+                                            <td class="text-green-400">Deposit</td>
+                                            <td>BTC</td>
+                                            <td>0.5225</td>
+                                            <td class="text-yellow-400">Pending</td>
+                                        </tr>
+                                        <tr class="border-b border-borderLine">
+                                            <td class="pl-2 py-3">FT-20141202-459557</td>
+                                            <td class="text-red-500">Withdrawal</td>
+                                            <td>Bank transfer</td>
+                                            <td>$5225.99</td>
+                                            <td class="text-green-400">Completed</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="pl-2 py-3">FT-20141202-459557</td>
+                                            <td class="text-red-500">Withdrawal</td>
+                                            <td>BTC</td>
+                                            <td>$725.25</td>
+                                            <td class="text-green-400">Completed</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer>      
+                        <footer class="flex justify-between px-6 py-3 bg-white shadow-sm text-sm">
+    <div class="">
+        <p class="inline-block text-blue-600 mr-4">Privacy Policy</p>
+        <p class="inline-block text-blue-600">Term of use</p>
+    </div>
+    <div class="text-brand-gray-medium">Copyright Lauptech. All rights reserved</div>
+</footer>                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>
